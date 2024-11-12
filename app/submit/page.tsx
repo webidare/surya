@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Slider } from '@/components/ui/slider'
 import { Label } from '@/components/ui/label'
 import { useToast } from '@/components/ui/use-toast'
+import { Toaster } from '@/components/ui/toaster'
 
 export default function SubmitPage() {
   const router = useRouter()
@@ -84,6 +85,7 @@ export default function SubmitPage() {
           {isSubmitting ? 'Submitting...' : 'Submit Love'}
         </Button>
       </form>
+      <Toaster />
     </div>
   )
 }
