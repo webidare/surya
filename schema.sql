@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS love_messages (
+  id SERIAL PRIMARY KEY,
+  recipient_name VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  love_intensity INTEGER NOT NULL,
+  date_submitted TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
